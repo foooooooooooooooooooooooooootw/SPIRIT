@@ -1,0 +1,1 @@
+iptables -A INPUT -s 111.111.111.111 -j DROP && iptables -A INPUT -s 222.222.222.222 -j DROP && iptables -A INPUT -s 333.333.333.333 -j DROP && iptables -A INPUT -s 444.444.444.444 -j DROP && iptables -A INPUT -s 555.555.555.555 -j DROP
