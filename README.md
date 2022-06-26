@@ -1,5 +1,5 @@
 # SPIRIT
-## The Simple Python Instant Rangeban for IP Tables (SPIRIT) shell file generator
+## Simple Python Instant Rangeban for IP Tables (SPIRIT) shell file generator
 
 ### Background
 I initially created this script for my own personal use because I kept getting a lot of unwanted connections and brute force attempts on my network. Inputting CIDR IP Blocks one by one would have taken hours so instead I came up with a python script that takes a text file and turns it into a shell file complete with IP Table Drop packet commands. These text files with ip addresses can be found on some websites, as well as on other repositories on github. The shell file is then downloaded over ssh on the target machine and piped into bash. I'm sure there may be other solutions out there that are more elegant, but this is mine. 
