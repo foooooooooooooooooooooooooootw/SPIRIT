@@ -13,5 +13,10 @@ sudo iptables -S
 ```
 Remember, IP Tables are reset on restart so look into persistence. 
 
+### Processing Speed & Output Tests
+So far, the "Instant" part is pretty true - 3515 IP addresses in CIDR notation (the entirety of china's IP address blocks, if I'm not mistaken) finishes instantly in pycharm and slightly under a second for IDLE. This same input file is about 52KB in size, or 52,000 characters. 
+
+The output file is 164KB, or 164,000 characters. I have ideas on how to improve the file size but for now it seems marginal unless you're using it for super huge lists. 
+
 ### Additional Notes
 There is little to no error checking for now, and I might update it some more - so please read the usage instructions before attempting anything. It takes a pretty specific file format.
