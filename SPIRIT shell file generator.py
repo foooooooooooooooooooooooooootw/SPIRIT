@@ -17,10 +17,10 @@ def main():
     stripped = [line.strip("\n") for line in lines]
 
     for i in range(0, len(stripped)):
-        stripped[i] = "iptables -A INPUT -s " + stripped[i] + " -j DROP &&"
+        stripped[i] = "iptables -A INPUT -s " + stripped[i] + " -j DROP;"
 
     compiled = " ".join(str(e) for e in stripped)
-    compiled = compiled[:-3]
+    compiled = compiled[:-1]
 
     output_file = open("{} - compiled IP ban command.sh".format(current_time), "w")
     output_file.write(compiled)
